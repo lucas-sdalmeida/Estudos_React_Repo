@@ -1,0 +1,33 @@
+.lineItem {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 2em;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: rgba(100, 100, 100, .7);
+
+    text-transform: uppercase;
+}
+
+button {
+    border-style: none;
+    border-radius: .30em;
+
+    padding: .75em;
+
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.delete {
+    background-color: rgba(255, 0, 0, .95);
+    color: rgba(255, 255, 255);
+}
+
+.delete:hover {
+    background-color: rgba(150, 0, 0, .95);
+}

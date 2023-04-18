@@ -46,7 +46,9 @@ function Content() {
                         <li className="item" key={item.id}>
                             <input type="checkbox" 
                             onChange={() => handleCheck(item.id)} cheked={item.checked} />
+
                             <label>{item.item}</label>
+                            
                             <FaTrashAlt onClick={() => handleDelete(item.id)} role="button" tabIndex="0"/>
                         </li>)) 
                     }</ul>) : (
