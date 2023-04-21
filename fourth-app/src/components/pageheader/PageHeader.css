@@ -1,0 +1,14 @@
+.page-header {
+    width: 100%;
+    height: fit-content;
+
+    padding: .5em 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-header > .page-title {
+    max-width: 30%;
+}

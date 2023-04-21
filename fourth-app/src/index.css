@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 12pt;
+}
+
+#root {
+  width: 100vw;
+  max-width: 100vw;
+
+  height: fit-content;
+  min-height: 100vh;
+
+  background-color: rgba(50, 50, 50);
+}
+
+.App {
+  width: 100vw;
+  max-width: 100vw;
+
+  height: fit-content;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-header {
+  width: 100%;
+  height: fit-content;
+
+  padding: .5em 1em;
+
+  background-color: rgba(0, 200, 0, .75);
+  color: rgba(255, 255, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0 0 auto;
+}
+
+main {
+  width: 100%;
+  max-width: 100vw;
+  
+  height: fit-content;
+
+  padding: 1rem;
+
+  flex: 1 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main > section {
+  width: 90%;
+
+  padding: 1rem;
+  margin: 0 0 .5rem;
+  border-radius: .75rem;
+
+  background-color: rgba(150, 150, 200, .60);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main > :last-child {
+  margin: 0;
+}
+
+main > section > header {
+  width: 100%;
+
+  padding: .25em;
+  margin: 0 0 1em;
+  border-radius: .75em;
+
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: rgba(0, 200, 0, .75);
+  color: rgba(255, 255, 255);
+}
+
+main > section > header > h2 {
+  font-weight: lighter;
+}
+
+main > section > ul {
+  width: 100%;
+
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > section > ul > li {
+  width: 98%;
+
+  padding: .5em;
+
+  text-transform: uppercase;
+
+  background-color: rgba(200, 200, 200, .75);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > section > ul > li {
+  margin: 0 0 .5em;
+}
+
+main > section > ul > li:last-child {
+  margin: 0;
+}
+
+li input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+li svg {
+  height: 1.5em;
+  width: 1.5em;
+  color: rgba(240, 0, 0);
+}
+
+li svg:hover {
+  color: rgba(150, 0, 0, .9);
+}
+
+li svg:hover:active {
+  color: rgba(255, 0, 0, .9);
+}
+
+form {
+  width: 100%;
+  
+  padding: 1em;
+
+  background-color: rgba(200, 200, 200, .75);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form > .input-field {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > .input-field > input {
+  padding: .25em 1em;
+  border: none;
+  border-radius: .25em;
+
+  background-color: rgba(0, 0, 150, .5);
+  color: rgba(255, 255, 255);
+}
+
+form > .input-field > #filter-box {
+  max-width: 80%;
+
+  flex: 1 0 auto;
+}
+
+form > .input-field > input::placeholder {
+  color: rgba(255, 255, 255);
+}
+
+button.plus-sign {
+  border: none;
+
+  background: none;
+}
+
+button.plus-sign > svg {
+  width: 1.5em;
+  height: 1.5em;
+
+  color:rgba(0, 230, 0);
+}
+
+button.plus-sign > svg:hover {
+  color: rgba(0, 150, 0, .9);
+}
+
+button.plus-sign > svg:hover:active {
+  color: rgba(0, 255, 0, .9)
+}
