@@ -1,0 +1,23 @@
+.Square {
+    width: 15em;
+    height: 15em;
+
+    max-width: 90%;
+    max-height: 90%;
+
+    padding: 1em;
+    
+    border: .25em solid rgba(0, 0, 0, .7);
+    border-radius: 1em;
+
+    box-shadow: 0 0 .75em .5em rgba(200, 200, 200, .8);
+
+    text-transform: uppercase;
+
+    flex: 0 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

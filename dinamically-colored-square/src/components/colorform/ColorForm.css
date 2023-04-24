@@ -1,0 +1,19 @@
+.ColorForm {
+    width: 75%;
+    height: 2em;
+
+    margin: 1rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ColorForm > input {
+    width: 100%;
+
+    padding: .5em .75em;
+
+    border: .25em solid rgba(0, 0, 0, .7);
+    border-radius: .75em;
+}
