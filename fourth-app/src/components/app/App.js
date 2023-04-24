@@ -1,23 +1,22 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import PageHeader from "../pageheader/PageHeader";
 import ContentBody from '../contentbody/ContentBody';
 
 function App() {
   const [listOfItems, setListOfItems] = useState(
-    JSON.parse(localStorage.getItem("shopping"))
+    localStorage.getItem("shopping") === 'undefined' ?
+      [] : JSON.parse(localStorage.getItem("shopping"))
   );
 
   const [newItem, setNewItem] = useState('');
 
   const [search, setSearch] = useState('');
 
-  function updateListOfItems(newList) {
-    setListOfItems(newList);
-
-    localStorage.setItem("shopping", JSON.stringify(newList));
-  }
+  useEffect(() => {
+    localStorage.setItem("shopping", JSON.stringify(listOfItems));
+  }, [listOfItems]);
 
   function changeCheckItem(itemId) {
     const updatedList = listOfItems.map((item) => {
@@ -26,13 +25,13 @@ function App() {
       return item;
     });
 
-    updateListOfItems(updatedList);
+    setListOfItems(updatedList);
   }
 
   function deleteItem(itemId) {
     const updatedList = listOfItems.filter((item) => item.id !== itemId);
 
-    updateListOfItems(updatedList);
+    setListOfItems(updatedList);
   }
 
   function addItem(item) {
@@ -48,7 +47,7 @@ function App() {
 
     const updatedList = [...listOfItems, addingItem];
 
-    updateListOfItems(updatedList);
+    setListOfItems(updatedList);
   }
 
   return (

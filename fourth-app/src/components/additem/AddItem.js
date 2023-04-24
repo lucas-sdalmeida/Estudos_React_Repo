@@ -11,7 +11,6 @@ function AddItem({ newItem, setNewItem, onItemSubmit }) {
                     Item:
                 </label>
                 <input 
-                    autofocus
                     ref={inputRef}
                     id="add-item"
                     type="text"
