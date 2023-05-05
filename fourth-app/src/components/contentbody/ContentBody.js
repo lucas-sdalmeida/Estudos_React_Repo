@@ -22,7 +22,7 @@ function ContentBody({ itemsList,
     }
 
     return (
-        <main>
+        <>
             <section>
                 <header>
                     <h2>
@@ -71,7 +71,7 @@ function ContentBody({ itemsList,
                 />
 
             </section>
-        </main>
+        </>
     );
 }
 
