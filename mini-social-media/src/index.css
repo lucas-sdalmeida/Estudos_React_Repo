@@ -1,1 +1,17 @@
+* {
+    box-sizing: border-box;
 
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+
+    min-height: 100vh;
+    max-height: auto;
+
+    display: grid;
+    grid-template-rows: 7vh minmax(93vh, auto);
+    grid-template-areas: "header" "content";
+}
